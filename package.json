@@ -12,7 +12,11 @@
     "dev": "parcel src/index.html"
   },
   "keywords": [],
-  "author": "Roman Artukh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramera/Routes.git"
+  },
+  "author": "Roman Artukh <roman.artukh@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.3.3",
