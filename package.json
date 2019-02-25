@@ -1,0 +1,41 @@
+{
+  "name": "routes",
+  "version": "1.0.0",
+  "description": "Google map test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --silent",
+    "test:update": "jest --silent -u",
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
+    "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,json}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "dev": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "Roman Artukh",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.14.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.1.0",
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.16.4",
+    "react-test-renderer": "^16.8.3"
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-sortablejs": "^1.5.1",
+    "sortablejs": "^1.8.3"
+  }
+}
