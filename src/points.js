@@ -5,14 +5,14 @@ class Points extends React.Component {
   render() {
     const pointsList = this.props.points.map((point, index) => (
       <li key={point.id} data-id={index} className="list-item">
-        <svg height="10" width="15" className="dragging-sign-svg">
+        <svg height="10" width="15" className="list-item__dragging-sign-svg">
           <line x1="0" y1="1" x2="15" y2="1" stroke="grey" strokeWidth="2" />
           <line x1="0" y1="5" x2="15" y2="5" stroke="grey" strokeWidth="2" />
           <line x1="0" y1="9" x2="15" y2="9" stroke="grey" strokeWidth="2" />
         </svg>
-        <div className="point-item-text">{point.name}</div>
+        <div className="list-item__item-text">{point.name}</div>
         <button
-          className="delete-line-button"
+          className="list-item__delete-button"
           onClick={() => this.props.deletePoint(point.id)}
         >
           <svg height="10" width="10" className="delete-sign-svg">
@@ -26,8 +26,9 @@ class Points extends React.Component {
       <div className="points-container">
         <h2>Points</h2>
         <Sortable
-          options={{ animation: 150, ghostClass: "blue-background-class" }}
+          options={{ animation: 150, ghostClass: "list-item_background_blue" }}
           tag="ul"
+          className="points-list"
           onChange={order => {
             this.props.changeOrder(order);
           }}

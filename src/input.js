@@ -31,6 +31,7 @@ class Input extends React.Component {
           type="text"
           value={this.state.input}
           onChange={this.handleInputChange}
+          className="input-form__input"
         />
       </form>
     );
